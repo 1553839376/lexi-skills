@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" font-family="Microsoft YaHei" lang="zh-CN" data-pptx-page-role="content">
+  <!-- ===== 骨架四件套：不要改，不要删 ===== -->
+  <rect id="page-bg" data-pptx-role="background" x="0" y="0" width="1280" height="720" fill="#FAF6EE"/>
+  <rect id="frame-outer" data-pptx-role="decoration" x="26" y="22" width="1228" height="676" rx="18" fill="none" stroke="#E6D8BF" stroke-width="2"/>
+  <rect id="frame-inner" data-pptx-role="decoration" x="38" y="34" width="1204" height="652" rx="12" fill="none" stroke="#F2E7D3" stroke-width="1"/>
+  <g id="corner-ticks" data-pptx-role="decoration" data-pptx-bounds="44 40 1192 96">
+    <path d="M44 68 L44 44 L68 44" fill="none" stroke="#E3D3B4" stroke-width="2"/>
+    <path d="M1212 44 L1236 44 L1236 68" fill="none" stroke="#E3D3B4" stroke-width="2"/>
+    <circle cx="1210" cy="94" r="30" fill="none" stroke="#EFF5F2" stroke-width="2"/>
+    <circle cx="1210" cy="94" r="17" fill="#F7E6C6"/>
+  </g>
+  <rect id="edge-tab" data-pptx-role="decoration" x="18" y="340" width="16" height="88" rx="9" fill="#F2C879"/>
+  <path id="wave" data-pptx-role="decoration" d="M26 612 C 210 572 400 646 620 612 C 840 578 1050 648 1254 606 L1254 698 L26 698 Z" fill="#E4F0EC"/>
+  <g id="footer-page" data-pptx-bounds="1144 630 74 44">
+    <rect x="1146" y="632" width="68" height="40" rx="20" fill="none" stroke="#2F8B84" stroke-width="1.5"/>
+    <text x="1180" y="660" font-size="22" font-weight="bold" fill="#2F8B84" text-anchor="middle">01</text>
+  </g>
+
+  <!-- ===== 页眉三件套 ===== -->
+  <rect id="header-bar" data-pptx-role="decoration" x="88" y="84" width="7" height="48" fill="#2F8B84"/>
+  <g id="header" data-pptx-bounds="82 88 1060 118">
+    <text x="112" y="120" font-size="26" fill="#2F8B84">00　章节小标</text>
+    <text x="88" y="184" font-size="44" font-weight="bold" fill="#1E3A38">本页标题</text>
+  </g>
+  <rect id="header-rule" data-pptx-role="decoration" x="90" y="206" width="80" height="4" fill="#E8A84E"/>
+
+  <!-- ===== 内容区：从下面开始改 ===== -->
+
+  <!-- 式6 左文右图：三条要点 -->
+  <g id="item-1" data-pptx-bounds="82 256 536 104">
+    <circle cx="96" cy="282" r="5" fill="#2F8B84"/>
+    <text x="114" y="290" font-size="26" fill="#1E3A38">第一行要点，<tspan x="114" dy="40">第二行要点。</tspan></text>
+  </g>
+  <g id="item-2" data-pptx-bounds="82 366 536 104">
+    <circle cx="96" cy="392" r="5" fill="#2F8B84"/>
+    <text x="114" y="400" font-size="26" fill="#1E3A38">第一行要点，<tspan x="114" dy="40">第二行要点。</tspan></text>
+  </g>
+  <g id="item-3" data-pptx-bounds="82 476 536 104">
+    <circle cx="96" cy="502" r="5" fill="#2F8B84"/>
+    <text x="114" y="510" font-size="26" fill="#1E3A38">第一行要点，<tspan x="114" dy="40">第二行要点。</tspan></text>
+  </g>
+
+  <!-- 右侧配图：不需要图就把 media 与 media-cap 两组整块删掉。
+       真正出图时把下面这张占位虚线框换回 image：
+       <image href="../images/xxx.jpg" x="690" y="246" width="502" height="282"
+              preserveAspectRatio="xMidYMid slice"/> -->
+  <g id="media" data-pptx-bounds="689 245 504 284">
+    <rect x="689" y="245" width="504" height="284" fill="#FFFFFF" stroke="#E6D8BF" stroke-width="2"/>
+    <rect x="702" y="258" width="478" height="258" fill="none" stroke="#DCCDB2" stroke-width="1.5" stroke-dasharray="8 6"/>
+    <text x="941" y="380" font-size="22" fill="#B8A98C" text-anchor="middle">图片占位 502×282</text>
+    <text x="941" y="412" font-size="22" fill="#C9BBA0" text-anchor="middle">href="../images/xxx.jpg"</text>
+  </g>
+  <g id="media-cap" data-pptx-bounds="690 536 502 40">
+    <text x="690" y="566" font-size="22" fill="#8A7A60">图注一行，不超过 18 字</text>
+  </g>
+
+  <!-- 底部金句：不是每页都要，成效页/反思页才用 -->
+  <g id="takeaway" data-pptx-bounds="82 626 1040 54">
+    <text x="88" y="660" font-size="32" font-weight="bold" fill="#1E3A38">一句收束本页的结论。</text>
+  </g>
+</svg>
