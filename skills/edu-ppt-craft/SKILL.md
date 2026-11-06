@@ -69,7 +69,7 @@ python3 <skill>/scripts/page_replace.py \
     --out /tmp/out.pptx
 ```
 
-脚本自动完成：备份 → 主题色落地（schemeClr→srgbClr）→ 删 `srcRect` → 换 slide XML 与 rels → 补媒体 → **逐条比对证明其余条目字节级一致** → 悬空 Target 检查 → 原子写回。
+脚本自动完成：备份 → 主题色落地（schemeClr→srgbClr）→ 校验 `srcRect`（只修异常值，合法的千分比裁剪保留）→ 换 slide XML 与 rels → 补媒体 → **逐条比对证明其余条目字节级一致** → 悬空 Target 检查 → 原子写回。
 
 为什么必须这样，以及校验数字怎么读，见 `references/page-replace.md`。
 
@@ -80,7 +80,7 @@ python3 <skill>/scripts/page_replace.py \
 - **现有课件解包**（希沃 .enbx = zip）：取图后登记 `image_sources.json`（文件名 / 来源页 / 用途），避免后期找不到出处。
 - **视频截帧**：先按 `fps=1/N` + `tile` 拼网格扫全片定位，再用单帧 `-ss` 精确取，`crop` 掉字幕，`scale` 到 502×282 之类的目标尺寸。
 
-图片进 SVG 三条硬规定：路径写 `../images/xxx.jpg`；`preserveAspectRatio="xMidYMid slice"`；编译后检查并删掉自动生成的 `<a:srcRect>`。
+图片进 SVG 三条硬规定：路径写 `../images/xxx.jpg`；`preserveAspectRatio="xMidYMid slice"`；编译后检查 `<a:srcRect>`——千分比正常值是合法裁剪要保留，只有单边 ≥100000 或左右/上下合计 ≥80000 才是异常，此时删除。
 
 ## 六、逐字稿
 
