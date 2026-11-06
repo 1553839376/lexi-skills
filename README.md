@@ -1,6 +1,8 @@
-# WorkBuddy Skills
+# Lexi Skills
 
 我自己在用的一组 WorkBuddy 技能。每个技能都来自实际做过的活儿——踩过坑、返过工，最后沉淀成一套可以照着重跑的流程。
+
+> 仓库地址：https://github.com/1553839376/lexi-skills
 
 ## 目录
 
